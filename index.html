@@ -11,6 +11,7 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <br>
@@ -20,12 +21,19 @@
         <li>HTML structures the page of a website; it is the building blocks of a website</li>
         <li>HTML showcases how a user will view a website but it is hardly seen on a surface level</li>
         <li>The head element contains information about the webpage</li>
+        <li>Important information in the head includes:</li>
+        <ol class="customIndent">
+          <li>meta charset="UTF-8" = The character set that can be displayed on the application; UTF-8 is most common</li>
+          <li>meta name="viewport" content="width=device-width, initial-scale=1.0" = This ensures the application fits the screen of the user's device</li>
+          <li>If using a External CSS style, the link of the CSS sheet must be added to the head HTML, using link rel="stylesheet" href="location-of-CSS"</li>
+          <li>The title, which is displayed on the tab of the application even to users, is also found in the head using the title tag</li>
+          <li>meta http-equiv="X-UA-Compatible" content="IE=edge" defines the HTTP header of a document and ensures compatibility with modern web standards and features</li>
+          <li>img src: adds an image to the page using HTML; alt: explains what the image is</li>
+        </ol>
         <li>The body element contains content that can be viewed by a user, such as text, images, or links/hyperlinks</li>
         <li>ol=ordered or numbered lists; ul=bulleted lists; li=listed items</li>
         <li>The p tag creates a paragraph, the br tag creates a break or separation between lines or paragraphs</li>
         <li>Decides how and what to display, how big the display or text will be, what character sets can be used, what images will be shown, and more</li>
-        <li>UTF-8 is the best character set to use as it includes the most commonly used characters and more</li>
-        <li>img src: adds an image to the page using HTML; alt: explains what the image is</li>
       </ul>
       </section>
     </br>
@@ -45,6 +53,7 @@
         <li>A padding indicates how much space we want around the content inside of an element</li>
         <li>By using the class attribute in HTML, External CSS can be used to design everything within an element that contains the specific class attribute</li>
         <li>Color can be chosen using hexadecimal (hex) values OR by simply typing in the desired color; hexadecimal colors will be more exact</li>
+        <li>By using the class attribute and external CSS, a word within quotation marks and be used to directly design an element of code</li>
       </ul>
       </section>
     </br>
@@ -56,12 +65,16 @@
         <li>git status: checks what branch we are currently on</li>
         <li>git checkout -b branch-name: creates and names a new branch and switches to it</li>
         <li>git branch -d branch-name: deletes a branch; will not delete if content is not added to main branch yet</li>
-        <li>Git Flow, which includes the steps below, helps keep everything properly stored, updated, and in working order</li>
-        <li>git add -A: commits all files in the working branch and stages them to be moved</li>
-        <li>git commit -m: commits above mentioned files to the repository; the flag -m adds a message to the commit about changes implemented</li>
-        <li>git pull origin main (or other branch-name): pulls any updated code from the main branch (or other branch) into the feature branch; important to do before adding changes</li>
-        <li>git push origin branch-name: pushes changes to GitHub, making it possible to open a PR (pull request) so that, after peer reviews, a branch can be merged to the main branch</li>
-        <li>code .= opens VS</li>
+        <li>Git Flow, which includes the steps below, helps keep everything properly stored, updated, and in working order. It includes:</li>
+        <ol class="customIndent">
+          <li>git add -A: commits all files in the working branch and stages them to be moved</li>
+          <li>git commit -m: commits above mentioned files to the repository; the flag -m adds a message to the commit about changes implemented</li>
+          <li>git pull origin main (or other branch-name): pulls any updated code from the main branch (or other branch) into the feature branch; important to do before adding changes</li>
+          <li>git push origin branch-name: pushes changes to GitHub, making it possible to open a PR (pull request) so that, after peer reviews, a branch can be merged to the main branch</li>
+        </ol>
+        <li>Keeping up with git commits ensures teams continue to work smoothly with an updated application from anyone working on a project</li>
+        <li>code .= opens VS, where coding is worked on</li>
+
       </ul>
       </section>
     </br>
@@ -70,7 +83,23 @@
       <section class="card" id="javascript-section">
       <h2>Javascript</h2>
       <ul>
-        <li>Javascript Notes Here</li>
+        <li>JavaScript includes interactive features such as variables, strings, and data types</li>
+        <li>A variable is a named container that allows us to store data in our code</li>
+        <li>Control flow: the order in which a computer executes code in a JavaScript file (sequentially from top to bottom)</li>
+        <li>This coding method is more complex than HTML or CSS and can create websites and the like with more complexity</li>
+        <li>JavaScript codes includes:</li>
+        <ol class="customIndent">
+          <li>Boolean: A boolean value represents a logical entity and contains two values, "true" or "false"; this is mostly used for conditional statements in code such as "if...else"</li>
+          <li>Number: Although JavaScript doesn't have infinite access to all numbers, it does have a wide number chart. That being said, if a number goes beyond what it is capable of, it will default to positive or negative infinity for a big number, while positive or negative 0 is saved for small numbers, based on whether the number is positive or negative</li>
+          <li>BigInt: Numbers found in this type of code can go beyond that of those in the numbers category, but numbers found here aren't necessarily always more precise. Big integers can be represented more accurately, and these require adding "n" at the end of an integer or by calling a BigInt() function</li>
+          <li>String: These are textual data. The first item in a string is 0 and each item following increases by increments of 1. These are immutable but are easy to debug or build complexity. It is not always preferably, as complex strings can cause maintenance burdens. They are perfect for textual data, but arrays or other forms of code may be better for complex data</li>
+          <li>Symbol: A unique and immutable primitive value. These create unique property keys that are guaranteed not to clash with key from other code</li>
+          <li>Objects: Only mutable values. Functions fall under this category, with the capability of being callable</li>
+          <li>Properties: Can be added and removed and are either strings or symbols. They can be values or any type, including other objects. Broken up into data property and accessory property. Data property includes value, writable, enumerable, and configurable. Accessor property associates a key with either get or set to retrieve or store a value. It also includes enumerable and configurable, like data property</li>
+          <li>Arrays: Regular objects with a particular relationship between integer-keyed properties and legnth property. indexOf() searches a value in the array, push() appends an element to the array. It is perfect for ordered lists.</li>
+        </ol>
+        <li>console.log() is good for debugging, showing output of code, and helps test codes as well. For this class, it created a randomized function that informs the user of what topic to study, as well as what topics are featured in the study guide.</li>
+        <li>Conditional statements can be used to execute a block of code that differs whether a statement is true or false</li>
       </ul>
       </section>
     </br>
@@ -80,5 +109,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
